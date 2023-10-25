@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Bilmece</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h2>Sayı Bilme Oyunu</h2>
+        <h4>1 ile 100 arasındaki rastgele üretilen sayıyı bulunuz</h4>
+    </div>
+    <div id="card">
+        <div class="guessInput">
+            <input type="number" name="guess" id="guess" min="1" max="100">
+            <button type="button" id="guessSend">TAHMİN</button>
+        </div>
+        <p id="attention">Tahminini Yaz</p>
+        <h3 id="left">Kalan Hak: <span>10</span></h3>
+        <p id="numbers">Sayılar: <span></span></p>
+        <button type="button" id="startAgain">Yeniden Oyna</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

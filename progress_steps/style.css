@@ -1,0 +1,80 @@
+:root{
+    --pink: rgb(228, 85, 106);
+    --passive: rgb(208 208 208);
+}
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: rgb(236, 236, 236);
+    height: 100vh;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5rem;
+}
+.progress_card{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+.progress_cont{
+    width: 50px;
+    height: 4px;
+    background-color: var(--passive);
+}
+.progress{
+    height: 100%;
+    background-color: var(--pink);
+    width: 0%;
+    transition: all 1s ease-in-out;
+}
+.number_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: all 1s ease-in-out;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+    gap: 3rem;
+}
+button{
+    padding: 1.3rem 2.3rem;
+    background-color: var(--pink);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.078);
+}

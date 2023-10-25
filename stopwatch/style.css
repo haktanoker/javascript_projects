@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.all_time_cont{
+    width: 100%;
+    font-size: 20rem;
+    font-family: monospace;
+    margin-inline: auto;
+}
+/* .all_time{
+    text-align: center;
+} */
+.buttons {
+    display: flex;
+    gap: 5rem;
+}
+.btn {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border: 1px solid white;
+    padding: 1rem 7rem;
+    font-size: 5rem;
+    cursor: pointer;
+    outline: none;
+}
+.millisecond{
+    font-size: 5rem;
+}
+.cont{
+    width: 80%;
+    margin-inline: auto;
+}

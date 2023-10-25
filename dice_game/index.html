@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zar Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header_div">
+        <h1>Zar Oyunu</h1>
+        <h3>Kazananı belirlemek için adını gir ve butona bas</h3>
+    </div>
+    <div id="user_inputs">
+        <div class="user_input_div user_name_one">
+            <h3>Player ONE</h3>
+            <input type="text" name="playerOne" id="playerOne">
+            <button onclick="setUserName(P1Name);" id="userOneName">Submit</button>
+        </div>
+        <div class="user_input_div user_name_two">
+            <h3>Player TWO</h3>
+            <input type="text" name="playerTwo" id="playerTwo">
+            <button onclick="setUserName(P2Name);" id="userTwoName">Submit</button>
+        </div>
+    </div>
+    <button onclick="startGame();">Click to Roll</button>
+    <div id="dice_divs">
+        <div class="dice_div dice_div_one">
+            <p>Player ONE</p>
+            <div><p id="playerOneResult">?</p></div>
+        </div>
+        <div class="dice_div dice_div_two">
+            <p>Player TWO</p>
+            <div><p id="playerTwoResult">?</p></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

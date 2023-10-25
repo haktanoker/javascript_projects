@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kart Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <div id="card_inputs">
+        <div id="first_input" class="word_input">
+            <label for="ilk_input">İlk kelime:</label>
+            <input type="text" name="ilk_input" id="first_word">
+        </div>
+        <div id="second_input" class="word_input">
+            <label for="ikinci_input">İkinci kelime:</label>
+            <input type="text" name="ikinci_input" id="second_word">
+        </div>
+        <button id="addCard">EKLE</button>
+    </div>
+    <div id="cards">
+        <div class="card" onclick="showSecond()">
+            <p class="card_first_word">Deneme</p>
+            <p class="card_second_word">Deneme2</p>
+            <i onclick="deleteCard()" class="fa-solid fa-trash-can delete_task"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorized Todolist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+    <div id="header">
+        <h2>Kategorili Yapılacaklar Listesi</h2>
+        <div class="todoInput">
+            <input type="text" name="task" id="task">
+            <button type="button" id="taskSend" onclick="addTask()">+</button>
+        </div>
+        <p id="errorMessage">Lütfen geçerli bir görev giriniz</p>
+<!--Açılır Kategori Seçim Menüsü-->
+        <select name="todo-option" id="todoOptions">
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+            <option value="other">Other</option>
+        </select>
+        <div style="height: 1px; width: 500px; background-color: white;"></div>
+    </div>
+<!-- Kategoriler -->
+    <div id="categorys">
+<!-- Personal -->
+        <div class="category" id="personal">
+            <h3>Personal Tasks</h3>
+            <div id="personalTasks" class="taskContainer">
+            </div>
+        </div>
+<!-- Business -->
+        <div class="category" id="business">
+            <h3>Business Tasks</h3>
+            <div id="businessTasks" class="taskContainer">
+
+            </div>
+        </div>
+<!-- Other -->
+        <div class="category" id="other">
+            <h3>Other Tasks</h3>
+            <div id="otherTasks" class="taskContainer">
+
+            </div>
+        </div>
+    </div>
+    <a href="https://haktanoker.com/" target="_blank" id="me">Made by <span>Dyrotus</span></a>
+    <script src="script.js"></script>
+</body>
+</html>

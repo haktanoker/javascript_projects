@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(26, 26, 26);
+    padding: 2rem 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 25px;
+    margin: 1px;
+    height: 25px;
+    background-color: #444;
+    border: 1px solid #000;
+    transition: all 0.4s ease;
+}
