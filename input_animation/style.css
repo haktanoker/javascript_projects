@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: rgb(209, 209, 209);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+    border-radius: 10px;
+    padding: 3rem;
+    gap: 3rem;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.133);
+}
+h2{
+    font-size: 2.5rem;
+    color: rgb(180, 0, 0);
+}
+ .input_cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.input_cont input,
+.input_cont input:focus,
+.input_cont input:valid {
+    border: none;
+    border-bottom: 1px solid gray;
+    display: block;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    padding-inline: 1rem;
+}
+.input_cont label{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    cursor: text;
+}
+.input_cont label span{
+    display: flex;
+    transition: all .5s cubic-bezier(0.03, 1.43, 0.73, 1.36);
+}
+.input_cont input:focus + label span,
+.input_cont input:valid + label span{
+    color: black;
+    transform: translateY(-30px);
+}
+.btn{
+    display: inline-block;
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 20px;
+    background-color: rgb(180, 0, 0);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+#register{
+    font-size: 1.3rem;
+}
+#register span{
+    color: rgb(180, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+}

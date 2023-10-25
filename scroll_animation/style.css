@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 60%;
+    margin-inline: auto;
+}
+.animation{
+    margin-bottom: 30px;
+    transition: transform .3s ease-in-out;
+}
+.animation.left{
+    transform: translateX(-200%);
+}
+.animation:not(.left){
+    transform: translateX(200%);
+}
+.animation.show{
+    transform: translateX(0%);
+}
