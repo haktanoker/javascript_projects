@@ -1,0 +1,111 @@
+:root{
+    --main_color: #fff;
+    --orange: #f27A1A;
+    --text: #666666;
+    --header: #2A2A2A;
+    --bg_one: #94c5e3;
+    --bg_two: #78c271;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: var(--main_color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 60%;
+    min-width: 620px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+}
+h1{
+    background-color: var(--header);
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    padding: 3rem 0;
+}
+.faq{
+    background-color: transparent;
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.faq h2{
+    font-size: 1.9rem;
+    color: var(--header);
+}
+.faq p{
+    font-size: 1.5rem;
+    word-spacing: 1.5;
+    letter-spacing: .3px;
+    display: none;
+    color: var(--text);
+    margin-top: 1rem;
+}
+.faq.active p{
+    display: block;
+}
+.faq.active h2{
+    color: var(--orange);
+}
+.faq.active{
+    border-color: var(--orange);
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: var(--text);
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+}
+.faq button i.fa-chevron-up{
+    display: none;
+}
+.faq.active button i.fa-chevron-down {
+    display: none;
+}
+.faq.active button i.fa-chevron-up {
+    display: block;
+    color: var(--orange);
+}
+.faq::before,
+.faq::after{
+    content: '\f075';
+    font-family: 'Font Awesome 6 Free';
+    font-size: 10rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--bg_one);
+    opacity: .3;
+    z-index: -1;
+    display: none;
+}
+.faq::before{
+    color: var(--bg_two);
+    top: -30px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+.faq.active::before,
+.faq.active::after{
+    display: block;
+}
