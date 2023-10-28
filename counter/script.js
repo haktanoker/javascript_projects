@@ -6,7 +6,7 @@ counters.forEach(count => {
     const updateCounter = () => {
         const target = Number(count.getAttribute("data-target"));
         console.log(target);
-        const speed = Math.ceil(target / 100);
+        const speed = Math.ceil(target / 300);
 
         const c = +count.innerText;
 
