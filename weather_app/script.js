@@ -7,7 +7,7 @@ const hissedilen = document.querySelector("#hissedilen span");
 
 function getWeather() {
     let API = "YOUR_API_KEY";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}&units=metric&lang=tr`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${API}&units=metric&lang=tr`;
     fetch(url)
         .then((res) => res.json())
         .then(city => {
