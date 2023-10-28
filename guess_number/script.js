@@ -53,7 +53,6 @@ playAgain.addEventListener("click", () => {
     attention.textContent = "Tahminini Yaz";
     playAgain.style.display = "none";
     random = randomNumber(1, 100);
-    alert(random);
 })
 
 guessInput.addEventListener("keypress", function () {

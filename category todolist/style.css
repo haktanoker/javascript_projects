@@ -117,14 +117,3 @@ i:hover{
     transform: scale(1.2);
     color: white
 }
-#me{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-decoration: none;
-    color: white;
-}
-#me span{
-color: rgb(150, 0, 0);
-}
