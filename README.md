@@ -9,6 +9,15 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ## Projects
 
+### [Auto Text](auto_text)
+![Auto Text Gif](project_gifs/auto_text.gif)
+
+> [EN] It writes and deletes the texts you write in the "data" attribute in span tags for a certain period of time.
+
+> [TR] Span etiketleri içerisine "data" niteliğine yazdığınız metinleri belirli bir süreliğine yazar ve siler.
+
+---
+
 ### [Card Flip](card_flip)
 ![Card Flip Gif](project_gifs/card_flip.gif)
 
