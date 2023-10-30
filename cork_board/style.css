@@ -1,0 +1,111 @@
+:root{
+    --color_one: #E97777;
+    --color_two: #FDFFAE;
+    --color_three: #3085C3;
+    --color_four: #94B49F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+            url("https://previews.123rf.com/images/javarman/javarman2002/javarman200200076/140154873-cork-board-texture-perfect-high-resolution-grunge-background.jpg"), no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+#add_note{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--color_one);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.328);
+    transition: all .05s linear;
+}
+#add_note:active{
+    transform: scale(0.97);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.182);
+}
+#add_note i{
+    margin-right: 5px;
+}
+.notes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 7rem;
+}
+.note_div{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color_two);
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.edit_delete{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+.edit_delete button{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .05s linear;
+    color: rgb(56, 56, 56);
+}
+.edit_delete button:active{
+    transform: scale(0.97);
+}
+.note,
+textarea{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: var(--color_two);
+    padding: 1rem;
+    height: 100%;
+    font-size: 1.5rem;
+    resize: none;
+}
+textarea{
+    background-color: var(--color_two);
+    border: none;
+    outline: none;
+}
+.note{
+    text-wrap: wrap;
+}
+.hidden{
+    display: none;
+}
+p.hidden{
+    display: block;
+    opacity: 0;
+}
