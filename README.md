@@ -190,6 +190,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Quiz App](quiz_app)
+
+![Quiz App Gif](project_gifs/quiz_app.gif)
+
+> [EN] A classic quiz application consisting of four options and showing the score at the end.
+
+> [TR] Dört adet seçenekten oluşan ve en sonda skorunu gösteren klasik bir quiz uygulaması.
+
+---
+
 ### [Random Tag Picker](random_tag_picker)
 
 ![Random Tag Picker Gif](project_gifs/random_tag_picker.gif)
