@@ -80,6 +80,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Drag & Drop](drag_drop)
+
+![Dice Game Gif](project_gifs/drag_drop.gif)
+
+> [EN] A simple drag and drop project.
+
+> [TR] Basit bir sürükle ve bırak projesi.
+
+---
+
 ### [FAQ Panel](faq_panel)
 
 ![FAQ Panel Gif](project_gifs/faq_panel.gif)
