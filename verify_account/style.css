@@ -1,0 +1,119 @@
+:root{
+    --color_one: #df0050;
+    --color_two: #eae8e9;
+    --color_three: #242424;
+    --color_four: #e5b7de;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    height: 100vh;
+    color: var(--color_three);
+    background-color: var(--color_four);
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    padding: 4rem 6rem;
+    border-radius: 20px;
+    width: 50%;
+    min-width: 630px;
+    min-height: 50vh;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+::placeholder {
+    color: var(--color_four);
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: var(--color_four);
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--color_one);
+}
+.code_att,
+.receive_att{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+}
+.new_code{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color_one);
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.codes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0 5rem;
+}
+.code{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color_two);
+    transition: all .2s ease-in-out;
+}
+.code:focus{
+    outline: none;
+}
+.code:valid{
+    background-color: var(--color_one);
+}
+.btn{
+    display: inline-block;
+    width: 30%;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color_one);
+    color: var(--color_two);
+    margin-bottom: 2rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .05s linear;
+}
+.btn:active{
+    transform: scale(.95);
+}

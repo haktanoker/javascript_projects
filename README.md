@@ -230,6 +230,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Verify Account](verify_account)
+
+![Verify Account Gif](project_gifs/verify_account.gif)
+
+> [EN] A code validator where we can only write numbers, but not characters like ", e + -".
+
+> [TR] Sadece sayı yazabildiğimiz, ", e + -" gibi karakterleri yazamadığımız bir kod doğrulayıcı.
+
+---
+
 ### [Weather App](weather_app)
 
 ![Weather App Gif](project_gifs/weather_app.gif)
