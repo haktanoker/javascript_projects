@@ -180,6 +180,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Password Strength](pass_strength)
+
+![Navbar Animation Gif](project_gifs/pass_strength.gif)
+
+> [EN] A password control system that checks the accuracy and reliability of the entered password according to certain criteria.
+
+> [TR] Girilen şifrenin doğruluğunu ve güvenilirliğini belirli kriterlere göre kontrol eden bir şifre kontrol sistemi.
+
+---
+
 ### [Pokemon](pokemon)
 
 ![Pokemon Gif](project_gifs/pokemon.gif)

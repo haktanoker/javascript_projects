@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="script.js" defer></script>
+    <title>Password Strength</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="head_container">
+                <img src="https://static.vecteezy.com/system/resources/previews/010/872/381/original/3d-login-security-icon-png.png">
+                <h2 class="head_title">Log In</h2>
+            </div>
+            <div class="input_info">
+                <div class="inputs">
+                    <div class="input">
+                        <input type="email" name="mail" id="mail">
+                        <label for="mail">Email</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" name="pass" id="pass">
+                        <label for="pass">Password</label>
+                    </div>
+                    <div class="strength">
+                        <div class="strength_box"></div>
+                        <div class="strength_box"></div>
+                        <div class="strength_box"></div>
+                    </div>
+                    <label class="control control-checkbox">
+                        Show Password
+                        <input type="checkbox" id="checkbox"/>
+                        <div class="control_indicator"></div>
+                    </label>                    
+                <button type="button">Log In</button>
+                    <p class="register">Don't have an account? <span>Register</span></p>
+                </div>
+                <div class="infos">
+                    <h3 class="requirements">Password Requirements</h3>
+                    <p class="length">At least 8 characters</p>
+                    <p class="number">At least 1 number (0-9)</p>
+                    <p class="lower">At least one lowercase letter</p>
+                    <p class="upper">At least one uppercase letter</p>
+                    <p class="special">At least one special character</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
