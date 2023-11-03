@@ -1,0 +1,110 @@
+:root{
+    --color_one: #afafaf;
+    --color_two: #00b518;
+    --color_three: #fef9f9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: var(--color_one);
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+    background-color: var(--color_three);
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 0px #6a6a6a;
+    position: relative;
+}
+.content:nth-child(1){
+    background: url("https://i.pinimg.com/564x/3c/67/98/3c679885b582da2c625a6990c08c98a5.jpg"), no-repeat;
+}
+.content:nth-child(2){
+    background: url("https://i.pinimg.com/564x/48/d0/c0/48d0c0ce75139eec1c78cc299149ed2d.jpg"), no-repeat;
+}
+.content:nth-child(3){
+    background: url("https://i.pinimg.com/564x/41/fa/a3/41faa3508a7b1210a03d8b6265ed7848.jpg"), no-repeat;
+}
+.content:nth-child(4){
+    background: url("https://i.pinimg.com/564x/8e/e0/60/8ee0600cce110a8b54126283322d952b.jpg"), no-repeat;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 60px);
+    position: absolute;
+    background-size: cover !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px 15px 0 0;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+}
+.visible{
+    opacity: 1;
+}
+.content_title {
+    background-color: rgb(0 0 0 / 69%);
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+}
+.content_title h2{
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+.content_title p{
+    margin: 1.5rem;
+    font-size: 1.4rem;
+}
+.navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #463535;
+    border-radius: 0 0 15px 15px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: antiquewhite;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.active{
+    color: #c49a40;
+}
