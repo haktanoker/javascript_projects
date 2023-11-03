@@ -20,6 +20,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Bottom Navbar](bottom_navbar)
+
+![Bottom Navbar Gif](project_gifs/bottom_navbar.gif)
+
+> [EN] A bottom navbar project for mobile designs.
+
+> [TR] Mobil tasarımlar için bir bottom navbar projesi.
+
+---
+
 ### [Card Flip](card_flip)
 
 ![Card Flip Gif](project_gifs/card_flip.gif)
