@@ -240,6 +240,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Ripple Effect](ripple_effect)
+
+![Ripple Effect Gif](project_gifs/ripple_effect.gif)
+
+> [EN] Animation of a growing white circle starting from where the button is clicked.
+
+> [TR] Butona tıklanılan yerden başlayarak büyüyen bir beyaz bir daire animasyonu.
+
+---
+
 ### [Scroll Animation](scroll_animation)
 
 ![Scroll Animation Gif](project_gifs/scroll_animation.gif)

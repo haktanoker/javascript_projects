@@ -1,0 +1,55 @@
+:root{
+    --color_one: #e4e4e4;
+    --color_two: #ab3300;
+    --color_three: #fef9f9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: var(--color_one);
+    overflow: hidden;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: 3rem;
+    background-color: var(--color_two);
+    color: var(--color_three);
+    padding: 4rem 7rem;
+    border: none;
+    border-radius: 15px;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.circle{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background-color: rgba(255, 255, 255, 0.186);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale .6s ease-in-out;
+    user-select: none;
+}
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
