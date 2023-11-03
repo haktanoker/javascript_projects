@@ -260,6 +260,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Toast Notification](toast_notification)
+
+![Toast Notification Gif](project_gifs/toast_notification.gif)
+
+> [EN] Sends a toast notification that disappears after 3 seconds.
+
+> [TR] 3 saniye sonra kaybolan bir toast bildirimi gönderir.
+
+---
+
 ### [Verify Account](verify_account)
 
 ![Verify Account Gif](project_gifs/verify_account.gif)
