@@ -1,0 +1,88 @@
+:root{
+    --color_one: #3A4D39;
+    --color_two: #ECE3CE;
+    --color_three: #739072;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: whitesmoke;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    background-color: var(--color_one);
+    padding: 2rem 2rem 1rem;
+    border-radius: 25px;
+    color: var(--color_two);
+    font-size: 1.4rem;
+    height: 350px;
+}
+.infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+    margin-right: auto;
+}
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.position{
+    font-size: 1.15rem;
+    font-style: italic;
+}
+.bar {
+    width: 80%;
+    height: 4px;
+    background-color: var(--color_one);
+    margin: 1rem auto 2rem;
+    position: relative;
+}
+.progress{
+    left: 0;
+    position: absolute;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    background-color: var(--color_two);
+}
+.animate{
+    animation: fill 5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fill {
+    to {
+        width: 100%;
+    }
+}

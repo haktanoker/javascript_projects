@@ -240,6 +240,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Reference Cards](reference_cards)
+
+![Reference Cards Picker Gif](project_gifs/reference_cards.gif)
+
+> [EN] A project that switches to a new person every 5 seconds and shows how much time is left to switch to the new person, thanks to the progress bar.
+
+> [TR] 5 saniyede bir yeni kişiye geçen, ilerleme çubuğu sayesinde, yeni kişiye geçmeye ne kadar kaldığını gösteren bir proje.
+
+---
+
 ### [Ripple Effect](ripple_effect)
 
 ![Ripple Effect Gif](project_gifs/ripple_effect.gif)
