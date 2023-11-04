@@ -110,6 +110,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Feedback](feedback)
+
+![Feedback Gif](project_gifs/feedback.gif)
+
+> [EN] When hovering over the hearts, they are colored red. When you click on it, a selection is made.
+
+> [TR] Kalplerin üzerine gelindiğinde kırmızıya boyanır. Üzerine tıklandığında ise seçim yapılır.
+
+---
+
 ### [Guess Number](guess_number)
 
 ![Guess Number Gif](project_gifs/guess_number.gif)

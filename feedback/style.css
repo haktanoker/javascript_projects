@@ -1,0 +1,75 @@
+:root{
+    --color_one: #18122B;
+    --color_two: #635985;
+    --color_three: #393053;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: var(--color_one);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    background-color: var(--color_two);
+    padding: 2rem 2rem 1rem;
+    border-radius: 25px;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    gap: 2rem;
+}
+.title{
+    text-align: center;
+}
+button {
+    display: block;
+    font-size: 1.6rem;
+    background-color: whitesmoke;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px 0px black;
+    transition: all .05s ease-in-out;
+    cursor: pointer;
+}
+button:active{
+    box-shadow: 1px 1px 10px 0px rgb(30, 30, 30);
+    transform: scale(.98);
+}
+.feedback {
+    display: flex;
+    gap: 1rem;
+}
+.heart{
+    font-size: 4rem;
+    color: #998ba1;
+}
+.heart:active{
+    transform: scale(.9);
+}
+.heart i{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.att {
+    font-weight: bold;
+    color: darkred;
+    opacity: 0;
+}
