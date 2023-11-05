@@ -180,6 +180,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Movie App](movie_app)
+
+![Movie App Gif](project_gifs/movie_app.gif)
+
+> [EN] A site that displays movie posters, titles, scores and descriptions using API.
+
+> [TR] API kullanarak film afişlerini, isimlerini, puanlarını ve açıklamalarını gösteren bir site.
+
+---
+
 ### [Music Player](music_player)
 
 ![Music Player Gif](project_gifs/music_player.gif)
