@@ -120,6 +120,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Github Profile](github_profile)
+
+![Github Profile Gif](project_gifs/github_profile.gif)
+
+> [EN] A project that instantly retrieves the information in your Github profile.
+
+> [TR] Github profilinizdeki bilgileri anlık olarak getiren bir proje.
+
+---
+
 ### [Guess Number](guess_number)
 
 ![Guess Number Gif](project_gifs/guess_number.gif)
