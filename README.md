@@ -80,6 +80,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Dark Mode](dark_mode)
+
+![Dark Mode Gif](project_gifs/dark_mode.gif)
+
+> [EN] Thanks to the API taken from the Internet, it shows various cold jokes on the screen.
+
+> [TR] İnternetten alınan API sayesinde ekranda çeşitli soğuk şakalar gösterir.
+
+---
+
 ### [Dice Game](dice_game)
 
 ![Dice Game Gif](project_gifs/dice_game.gif)
