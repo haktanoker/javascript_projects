@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <title>Color Picker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="contents">
+            <div class="inputs">
+                <input type="color" id="color">
+                <input type="text" placeholder="Hex" id="colorEnter" maxlength="7">
+            </div>
+
+            <div class="types">
+
+                <div class="type">
+                    <p>Hex</p>
+                    <div class="info_btn">
+                        <p id="hex" class="type_box">HEX Code</p>
+                        <button class="copy" onclick="copyBoard(this)">Copy</button>
+                    </div>
+                </div>
+
+                <div class="type">
+                    <p>Rgb</p>
+                    <div class="info_btn">
+                        <p id="rgb" class="type_box">RGB CODE</p>
+                        <button class="copy" onclick="copyBoard(this)">Copy</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="color_bg"></div>
+
+    </div>
+</body>
+</html>
