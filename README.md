@@ -30,6 +30,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Calculator](calculator)
+
+![Calculator Gif](project_gifs/calculator.gif)
+
+> [EN] A simple calculator that can also be controlled from the keyboard.
+
+> [TR] Klavyeden de kontrol edilebilen basit bir hesap makinesi.
+
+---
+
 ### [Card Flip](card_flip)
 
 ![Card Flip Gif](project_gifs/card_flip.gif)

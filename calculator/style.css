@@ -1,0 +1,106 @@
+:root{
+    --color_one: #272727;
+    --color_two: #1b74b5;
+    --color_three: #0e802e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    /* pointer-events: none; */
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: var(--color_one);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    height: 100vh;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    width: 320px;
+    height: 460px;
+    border-radius: 40px;
+    border: 3px solid rgb(96, 96, 96);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn_cont{
+    display: flex;
+    gap: 10px;
+}
+.btn,
+.equals,
+.AC,
+.DE,
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color_two);
+    font-weight: bold;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: rgb(47, 47, 47);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 3px 2px rgb(96, 96, 96);
+    transition: all .05s ease-in-out;
+}
+.btn,
+.equals,
+.AC,
+.DE{
+    text-shadow: 1px 1px 2px var(--color_two);
+}
+.btn:active,
+.equals:active,
+.AC:active,
+.DE:active{
+    transform: scale(.95);
+}
+.btn:not(.num),
+.equals,
+.AC,
+.DE{
+    color: var(--color_three);
+    text-shadow: 1px 1px 2px var(--color_three);
+}
+.result{
+    display: flex;
+    justify-content: end;
+    color: white;
+    width: 270px;
+    border-radius: 0;
+    text-align: right;
+    padding-inline: 10px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px rgb(212, 212, 212);
+    cursor: auto;
+    border-radius: 20px;
+    box-shadow: none;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+.equals{
+    width: 130px;
+    border-radius: 50px;
+}

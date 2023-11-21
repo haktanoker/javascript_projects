@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="result"></div>
+            <div class="t1 btn_cont">
+                <button type="text" class="AC" onclick="result.innerText = ''">AC</button>
+                <button type="text" class="DE" onclick="removeLastChar()">DE</button>
+                <button type="text" class="btn point">.</button>
+                <button type="text" class="btn division">/</button>
+            </div>
+
+            <div class="t2 btn_cont">
+                <button type="text" class="btn num seven">7</button>
+                <button type="text" class="btn num eight">8</button>
+                <button type="text" class="btn num nine">9</button>
+                <button type="text" class="btn multi">*</button>
+            </div>
+
+            <div class="t3 btn_cont">
+                <button type="text" class="btn num four">4</button>
+                <button type="text" class="btn num five">5</button>
+                <button type="text" class="btn num six">6</button>
+                <button type="text" class="btn sub">-</button>
+            </div>
+
+            <div class="t3 btn_cont">
+                <button type="text" class="btn num one">1</button>
+                <button type="text" class="btn num two">2</button>
+                <button type="text" class="btn num three">3</button>
+                <button type="text" class="btn plus">+</button>
+            </div>
+
+            <div class="t4 btn_cont">
+                <button type="text" class="btn dbl_zero">00</button>
+                <button type="text" class="btn zero">0</button>
+                <button type="text" class="equals">=</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
