@@ -1,0 +1,117 @@
+:root{
+    --color_two: rgb(255, 255, 255);
+    --color_one: rgb(52, 52, 52);
+    --color_three: rgb(0, 96, 181);
+    --color_four: rgb(230, 0, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: var(--color_one);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    min-height: 100vh;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--color_two);
+    border-radius: 15px ;
+    position: relative;
+    padding: 40px 100px;
+    min-width: 530px;
+}
+h1#title {
+    color: var(--color_two);
+    margin-bottom: 20px;
+}
+.add_data {
+    display: flex;
+    width: 85%;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+input[type="number"] {
+    padding: 5px;
+    outline: none;
+    border: 1px solid var(--color_one);
+    font-size: 1.5rem;
+    max-width: 150px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.del {
+    color: var(--color_four);
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+button {
+    background-color: var(--color_three);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+button:hover{
+    background-color: rgb(23, 117, 199);
+}
+p {
+    margin: 5px auto;
+    color: var(--color_two);
+}
+p:not(first-child) {
+    font-size: 15px;
+    font-weight: bold;
+}
+.average_text {
+    font-weight: bold;
+    font-size: 20px;
+}
+span {
+    color: var(--color_three);
+}
+.change_mode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+    color: var(--color_two);
+    cursor: pointer;
+}
+
+.change_mode i:first-child{
+    display: block;
+} 
+.change_mode i:last-child{
+    display: none;
+} 
+.dark.change_mode i:last-child{
+    display: block;
+} 
+.dark.change_mode i:first-child{
+    display: none;
+} 

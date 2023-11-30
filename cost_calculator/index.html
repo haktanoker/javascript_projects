@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <title>Cost Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+
+            <h1 id="title">Crypto Average Price Calculator</h1>
+
+            <div class="add_data">
+                <input type="number" placeholder="Number of coins" min="0" step="0.1" class="numb_input">
+                <input type="number" placeholder="Price" min="0" step="0.1" class="price_input">
+                <div class="del" onclick="delBoxes(this)">✖</div>
+            </div>
+            <div class="add_data">
+                <input type="number" placeholder="Number of coins" min="0" step="0.1" class="numb_input">
+                <input type="number" placeholder="Price" min="0" step="0.1" class="price_input">
+                <div class="del" onclick="delBoxes(this)">✖</div>
+            </div>
+
+            <button type="button" id="btn">Add More <i class="fa-solid fa-plus"></i></button>
+
+            <div class="change_mode dark">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+            </div>
+
+            <p class="average_text">Average Buy Price: <span class="average_amount">$0,00</span></p>
+            <p class="total_bought_text">Total Cryptos Bought: <span class="total_bought_amount">0</span></p>
+            <p class="total_spent_text">Total Amount Spent: <span class="total_spent_amount">$0,00</span></p>
+
+        </div>
+    </div>
+</body>
+</html>

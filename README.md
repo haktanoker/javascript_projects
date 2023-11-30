@@ -80,6 +80,16 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ---
 
+### [Cost Calculator](cost_calculator)
+
+![Cost Calculator Gif](project_gifs/cost_calculator.gif)
+
+> [EN] A project where you can see the average cost, total cost and total amount, and change the theme by entering the purchase amount and purchase price of the coins you purchased.
+
+> [TR] Aldığınız coinlerin alış miktarını ve alış fiyatını girerek ortalama maliyeti, toplam maliyeti ve toplam miktarı görebileceğiniz, tema değiştirebileceğiniz bir proje.
+
+---
+
 ### [Counter](counter)
 
 ![Counter Gif](project_gifs/counter.gif)
