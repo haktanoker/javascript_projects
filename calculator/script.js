@@ -1,77 +1,100 @@
-var firstInput, secondInput, addButton, cardsContainer, cardList, cardNumber;
-firstInput = document.querySelector("#first_word");
-secondInput = document.querySelector("#second_word");
-addButton = document.querySelector("#addCard");
-cardsContainer = document.querySelector("#cards");
-cardList = [];
-cardNumber = 1;
+var result = document.querySelector(".result");
 
-addButton.addEventListener("click", function addCard(){
-    if(firstInput.value == "" || secondInput.value == ""){
-        alert("Lütfen iki kart bilgisini de eksiksiz giriniz");
-    } else{
-        cardList.push({
-            "firstWord" : firstInput.value,
-            "secondWord" : secondInput.value,
-            "cardId" : cardNumber,
-            "isVisible" : false
-        });
-        firstInput.value = "";
-        secondInput.value = "";
-        showcards();
-        cardNumber++;
-        firstInput.focus();
-    };
-});
+const ac = document.querySelector('.AC');
+const de = document.querySelector('.DE');
+const point = document.querySelector('.point');
+const division = document.querySelector('.division');
 
-secondInput.addEventListener("keypress", function () {
-    if(event.key == "Enter"){
-        addButton.click();
-    }
-})
+const seven = document.querySelector('.seven');
+const eight = document.querySelector('.eight');
+const nine = document.querySelector('.nine');
+const multi = document.querySelector('.multi');
 
-function showcards(){
-    cardsContainer.innerHTML = "";
-    if (cardList == ""){
-        cardsContainer.innerHTML = '<h2 style="color:white;">Henüz bir kart eklemediniz</h2>';
-    } else{
-        for (let card of cardList){
-            console.log(cardList)
-            let cardInfo = `
-            <div class="card" onclick="showSecond(this, ${card.cardId})">
-                <p class="card_first_word">${card.firstWord}</p>
-                <p class="card_second_word ${card.isVisible ? "visible" : ""}">${card.secondWord}</p>
-                <i onclick="deleteCard(${card.cardId})" class="fa-solid fa-trash-can delete_task"></i>
-            </div>
-            `;
-            cardsContainer.insertAdjacentHTML("beforeend", cardInfo);
-        };
-    };
+const four = document.querySelector('.four');
+const five = document.querySelector('.five');
+const six = document.querySelector('.six');
+const sub = document.querySelector('.sub');
+
+const one = document.querySelector('.one');
+const two = document.querySelector('.two');
+const three = document.querySelector('.three');
+const plus = document.querySelector('.plus');
+
+const dbl_zero = document.querySelector('.dbl_zero');
+const zero = document.querySelector('.zero');
+const equals = document.querySelector('.equals');
+
+const keyToButtonMap = {
+    '0': zero,
+    '1': one,
+    '2': two,
+    '3': three,
+    '4': four,
+    '5': five,
+    '6': six,
+    '7': seven,
+    '8': eight,
+    '9': nine,
+    '+': plus,
+    '-': sub,
+    '*': multi,
+    '/': division,
+    ',': point,
+    '.': point,
+    'Enter': equals
 };
 
-showcards();
-
-function showSecond(kart, eklenenKart){
-    for(let i in cardList){
-        if(cardList[i].cardId == eklenenKart){
-            if(cardList[i].isVisible){
-                kart.querySelector(".card_second_word").classList.remove("visible");
-                cardList[i].isVisible = false;
-            } else{
-                kart.querySelector(".card_second_word").classList.add("visible");
-                cardList[i].isVisible = true;
-            }
-        }
+window.addEventListener('keydown', function (e) {
+    if (result.innerText === "Hata") {
+        result.innerText = "";
     }
+    if (e.key === 'Backspace') {
+        e.preventDefault();
+        removeLastChar();
+    } else if (e.key === 'Enter') {
+        e.preventDefault();
+        evaluateResult();
+    } else if (keyToButtonMap.hasOwnProperty(e.key)) {
+        e.preventDefault();
+        keyToButtonMap[e.key].click();
+    }
+});
+
+equals.addEventListener('click', evaluateResult);
+
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+        let lastChar = result.innerText.slice(-1);
+        let value = e.target.textContent;
+
+        if (result.innerText === "Hata") {
+            result.innerText = "";
+        } else if (['+', '-', '*', '/', '.', ''].includes(value) &&
+            ['+', '-', '*', '/', '.', ''].includes(lastChar)) {
+        } else if (value === "=") {
+            evaluateResult();
+        } else if (value === "AC") {
+            result.innerText = "";
+        } else if (value === "DE") {
+            removeLastChar();
+        } else {
+            result.innerText += value;
+        }
+    });
+});
+
+function removeLastChar() {
+    result.innerText = result.innerText.slice(0, -1);
 }
 
-function deleteCard(id){
-    let deleteId;
-    for (let i in cardList){
-        if (cardList[i].cardId == id){
-            deleteId = i;
-        };
+function evaluateResult() {
+    let operation = result.innerText.replace(/,/g, '.');
+
+    try {
+        const resultValue = new Function('return ' + operation)();
+        result.innerText = resultValue.toString().replace(/\./g, ',');
+    } catch (e) {
+        result.innerText = 'Hata';
+        console.error('Hatalı işlem:', e);
     }
-    cardList.splice(deleteId, 1);
-    showcards();
 }
