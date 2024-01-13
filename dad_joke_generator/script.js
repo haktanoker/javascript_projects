@@ -1,4 +1,3 @@
-const joke = document.querySelector("#joke");
 const jokeEl = document.querySelector("#joke");
 const btn = document.querySelector(".btn");
 
