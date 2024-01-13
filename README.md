@@ -114,9 +114,9 @@ Bu repository, javascript yazılım dilinde kendimi geliştirirken yaptığım b
 
 ![Dark Mode Gif](project_gifs/dark_mode.gif)
 
-> [EN] Thanks to the API taken from the Internet, it shows various cold jokes on the screen.
+> [EN] It is a project that includes a simple dark-light theme transition. By saving the last selected theme in the browser, it remembers that theme even if the page is refreshed.
 
-> [TR] İnternetten alınan API sayesinde ekranda çeşitli soğuk şakalar gösterir.
+> [TR] Basit bir karanlık-aydınlık tema geçişi içeren projedir. Son seçilen temayı tarayıcıya kaydederek sayfa yneilense bile o temayı hatırlar.
 
 ---
 
