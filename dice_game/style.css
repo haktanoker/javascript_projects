@@ -3,19 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {font-size: 10px;}
-li {list-style-type: none;}
-a {text-decoration: none;}
-body{
+
+html {
+    font-size: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(21, 21, 21);
     color: whitesmoke;
 }
+
 #header_div{
     text-align: center;
     margin: 3rem 0;
@@ -41,12 +52,27 @@ body{
     width: 50%;
     justify-content: space-evenly;
 }
-.dice_div, .dice_div > div{
+.dice_div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.dice_div{
+.dice_div{ 
     gap: 2rem;
+}
+input {
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    letter-spacing: 1.5px;
+}
+button {
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
 }
